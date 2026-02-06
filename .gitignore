@@ -1,0 +1,19 @@
+# Build artifacts
+aes128_tb
+*.vcd
+*.vvp
+*.out
+
+# OpenLane outputs (if generated locally)
+runs/
+*.log
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

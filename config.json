@@ -1,0 +1,30 @@
+{
+    "DESIGN_NAME": "aes128",
+    "VERILOG_FILES": "dir::src/aes128.v dir::src/aes_sbox.v dir::src/aes_key_expand.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 1000 1000",
+    
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    
+    "PL_TARGET_DENSITY": 0.55,
+    "PL_RANDOM_GLB_PLACEMENT": 1,
+    
+    "SYNTH_STRATEGY": "AREA 0",
+    "SYNTH_BUFFERING": 1,
+    "SYNTH_SIZING": 1,
+    
+    "ROUTING_CORES": 4,
+    
+    "pdk::sky130A": {
+        "MAX_FANOUT_CONSTRAINT": 10,
+        "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+        "CLOCK_PERIOD": 10.0
+    },
+    
+    "DESIGN_IS_CORE": 0,
+    "FP_PDN_CORE_RING": 0,
+    "GLB_RT_MAXLAYER": 5
+}
