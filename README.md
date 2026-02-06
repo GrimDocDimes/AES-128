@@ -131,13 +131,6 @@ klayout results/final/gds/aes128.gds
 - **Optimization**: Area optimized
 - **Standard Cell Library**: sky130_fd_sc_hd
 
-## Verification
-
-The design has been verified with:
-1. ✅ Functional simulation with NIST test vectors
-2. ⏳ Synthesis (pending OpenLane run)
-3. ⏳ DRC checks (pending OpenLane run)
-4. ⏳ LVS verification (pending OpenLane run)
 
 ## References
 
