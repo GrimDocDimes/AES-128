@@ -60,9 +60,9 @@ gtkwave aes128.vcd
 ### Test Results
 
 All NIST FIPS-197 test vectors pass:
-- ✅ NIST FIPS-197 Appendix C.1
-- ✅ All zeros plaintext/key
-- ✅ Additional random patterns
+-  NIST FIPS-197 Appendix C.1
+-  All zeros plaintext/key
+-  Additional random patterns
 
 ## OpenLane ASIC Flow
 
