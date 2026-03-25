@@ -49,7 +49,7 @@ aes128/
 
 ```bash
 # Compile and simulate
-cd /home/jhush/aes128
+cd ......../aes128
 iverilog -o aes128_tb src/aes128.v src/aes_sbox.v src/aes_key_expand.v src/tb_aes128.v
 vvp aes128_tb
 
@@ -68,12 +68,12 @@ All NIST FIPS-197 test vectors pass:
 
 ### Prerequisites
 
-Ensure OpenLane is installed. Default path assumed: `/run/media/jhush/NEWTING/OpenLane`
+Ensure OpenLane is installed. Default path assumed: 
 
 ### Synthesis Only
 
 ```bash
-cd /run/media/jhush/NEWTING/OpenLane
+cd ............../OpenLane
 make mount
 
 # Inside container
@@ -89,10 +89,10 @@ exit
 
 ```bash
 # Copy design to OpenLane designs directory
-cp -r /home/jhush/aes128 /run/media/jhush/NEWTING/OpenLane/designs/
+cp -r ............../OpenLane/designs/
 
 # Enter OpenLane container
-cd /run/media/jhush/NEWTING/OpenLane
+cd ................./OpenLane
 make mount
 
 # Run full flow
@@ -119,7 +119,7 @@ netgen -batch lvs \
 
 # Exit container and view final GDS
 exit
-cd /run/media/jhush/NEWTING/OpenLane/designs/aes128/runs/aes128_run
+cd ................/OpenLane/designs/aes128/runs/aes128_run
 klayout results/final/gds/aes128.gds
 ```
 
